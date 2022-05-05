@@ -1,0 +1,15 @@
+div {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+  
+  .imggame {
+  
+    margin-top: -200px;
+    display: block; 
+margin-left: 35cm; 
+margin-right: 35cm; 
+border: 8px ridge blue; 
+padding: 5px; 
+  }
