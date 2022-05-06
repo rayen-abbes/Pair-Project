@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>RPS</title>
+    <title>ZUES RPS</title>
     <link rel="icon"
-    href="https://www.kindpng.com/picc/m/212-2122689_rock-paper-scissors-random-rock-paper-scissors-png.png">
+    href="https://www.pixel-tones.com/rpsgame/assets/images/srock.png">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
     <title>Document</title>
   </head>
   <body 
+  
     style="background-image: url(https://wallpapercave.com/wp/wp2972967.jpg); background-repeat: repeat-x;">
     <img 
     src="https://i.ibb.co/xqPhjSQ/RBK-HACKERS-PRESENT-removebg-preview.png"
@@ -22,6 +23,9 @@
       src="https://coolwallpapers.me/th700/2964245-pixelated-pixel-art-forest-trees___landscape-nature-wallpapers.jpg" 
       alt="">
     </div>
+    <audio autoplay>
+      <source src="song.mp3" type="audio/mpeg">
+    </audio>
     <div>
       <img 
       class='char1'
@@ -40,13 +44,30 @@
       alt="">
     </div>
     <div>
-      <img class='game'src="black.gif" alt="">
+      <img class='game'src="black.png" alt="">
     </div>
     <p><button class='bot'onclick="remove_img()">PLAY GAME</button></p> 
+    <h1 id="score">PLAYER1 <span id="hscore">0</span>     -    <span id="escore">0</span> COMPUTER </h1>
+      
   
-    <audio autoplay>
-      <source src="song.mp3" type="audio/mpeg">
-    </audio>
+    <div class="displayAttack">
+      <div class="attack">
+        <img id="heroAttack" src="./assets/Rock.png">
+      </div>
+   
+      <div class="attack">
+        <img id="computerAttack" src="./assets/Rock.png">
+      </div>
+    </div>
+   
+    <div class="action">
+      <input class="choice" type="image" src="./assets/Rock.png" value="Rock" />
+      <input class="choice" type="image" src="./assets/Paper.png" value="Paper" />
+      <input class="choice" type="image" src="./assets/Scissors.png" value="Scissors" />
+    </div>
+  </div>
+
+   
 
     <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
