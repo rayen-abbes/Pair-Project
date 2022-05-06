@@ -92,14 +92,16 @@ var chose = document.querySelectorAll(".choice");
     }
 
     function checkWinner() {
-        //we create a function to check if one of the players reach rounds win 
-      if ( heroScore === 5 ||computerScore === 5) {
-        var winner =
-        heroScore === 5
-            ? "FAITALITY"
-            : "YOU DIED! Try again next time!";
-        alert(winner);
-        return true;
+        //we create a function to check if one of the players reach rounds win
+          //we create a function to check if one of the players reach rounds win 
+        if ( heroScore === 5 ||computerScore === 5) {
+         if (heroScore === 5){
+              var winner = "FAITALITY"
+           } else {
+                var winner = "YOU DIED! Try again next time!";
+          }
+          alert(winner);
+          return true;
+        }
+        return false;
       }
-      return false;
-    }
